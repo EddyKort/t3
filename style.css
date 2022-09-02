@@ -1,0 +1,78 @@
+.body { 
+    background-color:#eeeeee; 
+}
+
+.box { 
+    text-align: center; 
+    background-color: white; 
+}
+
+.centered { 
+    display: inline-block; 
+    margin: 0; 
+}
+
+.checkerBoard { 
+    border-spacing: 0; 
+    border-collapse: collapse; 
+}
+
+.checkerBoard tr td {
+ border: 1px solid; 
+ width: 5em; 
+ height: 5em; 
+ text-align: center; 
+ vertical-align: middle; 
+ background: rgb(61, 109, 240);
+}
+
+.checkerBoard tr:nth-child(odd) td:nth-child(even) {
+ background: rgb(238, 230, 122);
+}
+
+.checkerBoard tr:nth-child(even) td:nth-child(odd) {
+ background: rgb(238, 230, 122);
+}
+
+.checkerWhite {
+    cursor: pointer;
+}
+
+.checkerWhite:hover {
+    border: 5px solid wheat;;
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+}
+
+.checkerBlack {
+    cursor: pointer;
+}
+
+.checkerBlack:hover {
+    border: 5px solid rgb(1, 41, 43);
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+}
+
+.whiteText {
+    text-align: center;
+    color: black;
+    font-family: "open sans";
+    font-size: 55px;
+}
+
+.blackText {
+    text-align: center;
+    font-family: "open sans";
+    font-size: 55px;
+    color: lightgray;
+}
+
+#divider {
+    font-size: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
