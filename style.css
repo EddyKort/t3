@@ -92,9 +92,3 @@ p {
 span {
     display: inline-block;
 }
-
-.highlight{
-    height: 82px;
-    width: 82px;
-    border: 4px solid rgb(32, 231, 32);
-}
