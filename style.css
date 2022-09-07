@@ -1,59 +1,38 @@
-.body { 
-    background-color:#eeeeee; 
+* {
+    margin: auto;
 }
 
-.box { 
-    text-align: center; 
-    background-color: white; 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
 }
 
-.centered { 
-    display: inline-block; 
-    margin: 0; 
+.board {
+    border: 10px solid rgb(87, 65, 5);
 }
 
-.checkerBoard { 
-    border-spacing: 0; 
-    border-collapse: collapse; 
+div {
+    display: flex;
+    justify-content: space-between;
 }
 
-.checkerBoard tr td {
- border: 1px solid; 
- width: 5em; 
- height: 5em; 
- text-align: center; 
- vertical-align: middle; 
- background: rgb(61, 109, 240);
+.desktop {
+    margin: 0;
+    width: 100%;
 }
 
-.checkerBoard tr:nth-child(odd) td:nth-child(even) {
- background: rgb(238, 230, 122);
+.noneChecker {
+    background-color: rgb(238, 230, 122);
 }
 
-.checkerBoard tr:nth-child(even) td:nth-child(odd) {
- background: rgb(238, 230, 122);
-}
-
-.checkerWhite {
-    cursor: pointer;
-}
-
-.checkerWhite:hover {
-    border: 5px solid wheat;;
-    border-radius: 100%;
-    height: 60px;
-    width: 60px;
-}
-
-.checkerBlack {
-    cursor: pointer;
-}
-
-.checkerBlack:hover {
-    border: 5px solid rgb(1, 41, 43);
-    border-radius: 100%;
-    height: 60px;
-    width: 60px;
+td {
+    text-align: center;
+    background-color: rgb(61, 109, 240);
+    width: 65px;
+    height: 65px;
 }
 
 .whiteText {
@@ -70,9 +49,52 @@
     color: lightgray;
 }
 
+.checkerBlack {
+    width: 20px;
+    height: 20px;
+    padding: 12px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 40px;
+}
+.checkerBlack:hover {
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.checkerWhite {
+    width: 20px;
+    height: 20px;
+    padding: 12px;
+    background-color: white;
+    border-radius: 40px;
+}
+
+.checkerWhite:hover {
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+p {
+    display: inline-block;
+}
+
 #divider {
-    font-size: 40px;
+    font-size: 90px;
     margin-left: 15px;
     margin-right: 15px;
 }
 
+span {
+    display: inline-block;
+}
+
+.highlight{
+    height: 82px;
+    width: 82px;
+    border: 4px solid rgb(32, 231, 32);
+}
