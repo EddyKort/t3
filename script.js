@@ -156,23 +156,8 @@ function getAvailableSpaces() {
             selectedChecker.minusEighteenthSpace = true;
         }
     }
-    checkCheckerConditions();
+    giveCheckerBorder();
 }
-
-function checkCheckerConditions() {
-        if (turn) {
-            selectedChecker.minusSeventhSpace = false;
-            selectedChecker.minusNinthSpace = false;
-            selectedChecker.minusFourteenthSpace = false;
-            selectedChecker.minusEighteenthSpace = false;
-        } else {
-            selectedChecker.seventhSpace = false;
-            selectedChecker.ninthSpace = false;
-            selectedChecker.fourteenthSpace = false;
-            selectedChecker.eighteenthSpace = false;
-        }
-        giveCheckerBorder();
-    }
 
 function giveCheckerBorder() {
     if (selectedChecker.seventhSpace || selectedChecker.ninthSpace || selectedChecker.fourteenthSpace || selectedChecker.eighteenthSpace
